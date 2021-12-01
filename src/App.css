@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(202, 29, 29);
 }
 
 .App-link {
@@ -35,4 +35,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/******************* Logo **********************/
+.n {
+  width: 1.75rem; 
+}
+
+
+/******************* MENU LINKS **********************/
+
+/* Importing the font Open Sans Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+
+:root {
+  --primary-white: #fff;
+
+}
+
+body {
+  font-family: "Open Sans Condensed";
+}
+
+nav a.nav-link {
+  font-weight:300;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.65rem;
+  margin-left: 0.65rem;
+  color: var(--primary-white) !important;
+}
+
+.navbar-brand {
+  max-width: 1.25rem ;
+  height: 3rem ;
 }
