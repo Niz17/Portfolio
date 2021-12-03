@@ -47,15 +47,20 @@
 
 /* Importing the font Open Sans Condensed */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
+/* Importing the font VT323 */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+/* Importing the font Source Code Pro */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
 
 :root {
   --primary-white: #fff;
   --primary-green: rgb(81, 151, 52);
   --primary-dark: rgba(255,255,255,0);
+  --primary-lgreen: rgb(169, 218, 149);
 }
 
 body {
-  font-family: "Open Sans Condensed";
+  /* font-family: "Open Sans Condensed"; */
 }
 
 nav a.nav-link {
@@ -87,4 +92,54 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-bottom: 0.1875rem solid var(--primary-green);
+}
+
+
+/******************* HEADER **********************/
+
+.header-wrapper {
+  position: relative;
+  background: url(./components/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height:90vh;
+  width: 211vh;
+}
+
+.main-info {
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  top:10rem; left:0; right:0; bottom:0;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.main-info h1 {
+  color: var(--primary-white);
+  position:relative;
+  top:-1rem; left:0; right:0; bottom:0;
+  text-transform: uppercase;
+  font-family: "Source Code Pro";
+  font-size: 4rem;
+}
+
+.main-info h2 {
+  font-family: "VT323";
+  position:relative;
+  top:-1rem; left:0; right:0; bottom:0;
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  color: var(--primary-white);  
+}
+
+/******************* TYPE_TEXT **********************/
+.type-text {
+  position:relative;
+  top:-5.5rem; left:0; right:0; bottom:0;
+  font-family: "VT323";
+  font-size: 8rem;
+  letter-spacing: 0.1rem;
+  color: var(--primary-white);  
 }
