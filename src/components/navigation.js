@@ -4,6 +4,9 @@
 
 import React from 'react'
 import n from "../components/n.png"
+// Importing fontawesome (emoji)
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {faBars} from "@fortawesome/free-solid-svg-icons"
 
 const navigation = () => {
     return (
@@ -11,7 +14,7 @@ const navigation = () => {
         <div className="container">
             <a className="navbar-brand" href="#"><img className ="n" src ={n} alt = "N"></img></a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+            <FontAwesomeIcon icon={faBars} style={{color: "rgb(81, 151, 52)"}}></FontAwesomeIcon>
             </button>
             
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -55,7 +58,7 @@ const navigation = () => {
                      <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     </input> 
                 </form> */}
-                <button className="btn btn-success" type ="submit">Search</button>
+                <button className="btn btn-success" type ="submit"> Get Resume</button>
                 {/* <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
                         <a className="nav-link" href= "#">Get My Resume</a>
